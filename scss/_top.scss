@@ -1,0 +1,119 @@
+.carousel-section{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    .fullBackground {
+      background-position: center center;
+      background-size: cover;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-color: rgba(15, 15, 15, 0.87);
+    }
+    
+  }
+  .carousel-container {
+    width: 60%;
+    margin-bottom: 100px;
+    display: grid;
+    
+    .more{
+      a{
+        color: white;
+      }
+      padding: 10px 55px;
+      outline: none;
+      border: 1px solid white;
+      background-color: rgba(15, 15, 15, 0.87);
+      
+      font-family: 'Bebas Neue', cursive;
+      font-size: 1.3em;
+      width: 200px;
+      transform: translateX(-85%);
+      cursor: pointer;
+      align-self: center;
+      justify-self: center;
+      
+    }
+  }
+  .carousel {
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+  }
+  .slider {
+    display: flex;
+    height: 100%;
+    width: 400%;
+    transition: all.3s;
+  }
+  .slider section {
+    flex-basis: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    line-height: 120px;
+    p{
+        color: rgba(255, 255, 255, 0.884);
+        font-size: 105px;
+        width: 550px;
+        font-family: myFirstFont;
+        display: block;
+        text-transform: uppercase;
+        word-spacing: 30px;
+        letter-spacing: 2px;
+    }
+    .middle{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 160px;
+        font-weight: 400;
+        color:#f04254;
+        letter-spacing: 2px;
+    }
+    .end{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 100px;
+        font-weight: 400;
+        margin-top: -15px;
+        letter-spacing: 2px;
+
+    }
+  }
+  
+  .control ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transform: translateY(31%);
+  }
+  .control ul li {
+    margin: 66px;
+    cursor: pointer;
+    opacity: .4;
+    color: white;
+    transition: ease-in .1s;
+    z-index: 999;
+    font-size: 1.1em;
+  }
+  .control ul li.selected {
+    font-size: 1.2em;
+    opacity: 1;
+    color: rgba(255, 255, 255, 0.904);
+  }
+  .control ul li.selected::after { 
+    content: ' \2500' ;
+    position: absolute;
+    transform: translate(480%,-10%) scaleX(9);
+    opacity: .2;
+    
+  } 
+  .control ul li.selected::before { 
+    content: ' \2500' ;
+    position: absolute;
+    transform: translate(-570%,-10%) scaleX(9);
+    opacity: .2;
+  } 

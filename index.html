@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css_reset.css">
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c96c39e9b1.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/fullclip.min.js"></script>
+    <title>FAUN - The Music</title>
+</head>
+
+<body>
+    <div class="container">
+        <header id="home">
+            <nav>
+                <div class="menu-bar">
+                    <div class="menu"><span></span></div>
+                    <div class="menu-ops">
+                        <a href="#home">Home</a>
+                        <a href="#gallery">Gallery</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+                
+                
+                <div class="logo">FAUN</div>
+                <div class="search"><input type="search" name="" class="input-box" placeholder="Search"
+                        autocomplete="off" />
+                    <i class="fas fa-search fa-lg"></i></div>
+            </nav>
+        </header>
+
+        <div class="carousel-section">
+            <div class="fullBackground"></div>
+            <div class="control">
+                <ul>
+                    <li class="selected">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                </ul>
+            </div>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="slider">
+                        <section>
+                            <p>A SAFE KIND</p>
+                            <p class="middle">MUSIC IS</p>
+                            <p class="end">OF HIGH</p>
+                        </section>
+                        <section>
+                            <p>Music is</p>
+                            <p class="middle">like a</p>
+                            <p class="end">dream</p>
+                        </section>
+                        <section>
+                            <p>Music</p>
+                            <p class="middle">is the</p>
+                            <p class="end">sprit</p>
+                        </section>
+                        <section>
+                            <p>Music is</p>
+                            <p class="middle">higher</p>
+                            <p class="end">power</p>
+                        </section>
+
+                    </div>
+
+                </div>
+                <button class="more"><a href="#about">View more</a></button>
+            </div>
+        </div>
+
+        <div class="about-section" id="about">
+            <div class="about-bg">
+                <h6 class="fp">OUT US</h6>
+                <p class="sp">ABO</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h1>about us</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus alias autem eum eos nisi
+                        consequuntur unde, enim accusamus dolor sunt veniam voluptatum velit est mollitia obcaecati?
+                        Amet
+                        voluptates odit facere.</p>
+                    <button>check our tour</button>
+                </div>
+                <div class="about-img">
+                    <img src="images/Photo.jpg" alt="" class="a-img">
+                    <p>CONCERT</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-section2" id="gallery">
+            <div class="overlay"></div>
+            <div class="carousel-container2">
+                <div class="carousel2">
+                    <div class="slider2">
+                        <section><video class="video" src="mixkit-44-preview.mp4"  muted width="100%"></video>
+                        </section>
+                        <section><video class="video" src="mixkit-contemporary-dancer-8621.mp4" muted
+                                width="100%"></video></section>
+                        <section><video class="video" src="mixkit-44-preview.mp4" muted width="100%"></video>
+                        </section>
+                        <section><video class="video" src="mixkit-contemporary-dancer-8621.mp4"  muted
+                                width="100%"></video></section>
+                    </div>
+                </div>
+            </div>
+            <div class="control-section2">
+                <div class="play">
+                    <i class="far fa-play-circle"></i>
+                </div>
+                <div class="video-text">
+                    <h1>OUR NEWEST VIDEO</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum repellat, laborum magni
+                        quidem est
+                        architecto nulla, illum omnis reiciendis ipsa ducimus cupiditate dicta deserunt voluptates
+                        reprehenderit id
+                        nesciunt laboriosam at?</p>
+                </div>
+                <div class="control2">
+                    <ul>
+                        <li class="selected2">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="imgslide">
+            <div class="overlay-container">
+                <div id="overlay-img" onclick="off()">
+                    <div id="img"><img src="images/2 (4).jpg" alt="" width="60%" height="60%"></div>
+                </div>
+                <div id="overlay-img2" onclick="off2()">
+                    <div id="img2"><img src="images/2 (1).jpg" alt="" width="60%" height="60%"></div>
+                </div>
+                <div id="overlay-img3" onclick="off3()">
+                    <div id="img3"><img src="images/2 (2).jpg" alt="" width="60%" height="60%"></div>
+                </div>
+                <div id="overlay-img4" onclick="off4()">
+                    <div id="img4"><img src="images/2 (3).jpg" alt="" width="60%" height="60%"></div>
+                </div>
+            </div>
+            <div class="imgs">
+                <img src="images/1 (1).jpg" onclick="on()" alt="" width="460px">
+                <img src="images/1 (2).jpg" onclick="on2()" alt="" width="460px">
+                <img src="images/1 (3).jpg" onclick="on3()" alt="" width="460px">
+                <img src="images/1 (4).jpg" onclick="on4()" alt="" width="460px">
+            </div>
+        </div>
+        <div class="contact" id="contact">
+            <div class="c-text">
+                <h1>WANT TO HIRE US?</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a tincidunt dui, vitae posuere ipsum.
+                    Praesent vehicula nunc eget risus vehicula rutrum. Vestibulum pulvinar sapien.</p>
+                <button class="c-btn">CONTACT WITH US</button>
+
+                <form action="" class="form">
+                    <input type="text" name="" id="name" placeholder="Name" autocomplete="off">
+                    <input type="email" name="" id="email" placeholder="Email" autocomplete="off">
+                    <input type="text" name="" id="message" placeholder="Message" autocomplete="off">
+                </form>
+            </div>
+        </div>
+        <footer>
+            <p>FAUN</p>
+            <h6>ALL RIGHTS RESERVED BY Nafario</h6>
+        </footer>
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+@media screen and (max-width: 900px){
+    .input-box{
+        width: 100px;
+    }
+    .slider{
+        width: 600%;
+    }
+    .slider section{
+        
+        P{
+            font-size: 45px;
+            line-height: 70px;
+        }
+        .middle{
+            font-size: 85px;
+        }
+        .end{
+            font-size: 35px;
+        }
+    }
+    .control ul li.selected::after{
+        transform: translate(140%,-10%) scaleX(3);
+    }
+    .control ul li.selected::before{
+        transform: translate(-240%,-10%) scaleX(3);
+    }
+    .more{
+        transform: translateX(0%);
+        margin-left: 35%;
+    }
+    .sp{
+        font-size: 200px;
+    }
+    .fp{
+        font-size: 300px;
+    }
+    .control2 ul{
+        display: flex;
+    }
+    .control2 ul li{
+        margin: 20px;
+    }
+    .video-text{
+        h1{
+            font-size: 3em;
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            color: white;
+        }
+    }
+    .play{
+        font-size: 2em;
+    }
+    .control-section2{
+        height: 300px;
+        transform: translateY(40%);
+    }
+    .overlay{
+        display: none;
+    }
+    
+}
+@media screen and (max-width: 600px){
+    form{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        input{
+            width: 250px;
+        }
+    }
+    
+}
+@media screen and (max-width: 400px){
+    .slider{
+        width: 800%;
+    }
+    .more{
+        margin-left: 100px;
+    }
+    .c-text{
+        font-size: .6em;
+        
+    }
+    .about-text{
+        text-align: center;
+        font-size: .8em;
+    }
+}

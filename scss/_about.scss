@@ -1,0 +1,70 @@
+.about-section{
+    position: relative;
+    .about-bg{
+        position: absolute;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        font-size: 480px;
+        color: #e2e1e198;
+        overflow: hidden;
+        width: 100%;
+        z-index: -1;
+        flex-wrap: wrap;
+        P{
+            transform: translateX(16%);
+        }
+        h6{
+            transform: translateX(-10%);
+        }
+        
+    }
+    .about-content{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .about-text{
+            margin-top: 10%;
+            text-transform: uppercase;
+            h1{
+                font-size: 2em;
+                margin-bottom: 60px;
+            }
+            p{
+                font-family: monospace;
+                font-weight: 600;
+                color: rgba(0, 0, 0, 0.575);
+                font-size: 1.2em;
+                width: 500px;
+                margin-bottom: 60px;
+                line-height: 30px;
+            }
+            button{
+                padding: 10px 15px;
+                outline: none;
+                border: 1px solid black;
+                background-color: white;
+                text-transform: uppercase;
+                font-family: 'Bebas Neue', cursive;
+                font-size: 1em;
+                cursor: pointer;
+            }
+        }
+        .about-img{
+            margin-top: 10%;
+            img{
+                box-shadow: 4px 3px 37px -5px rgba(0,0,0,0.56);
+                max-width: 582px;
+                width: 100%;
+            }
+            p{
+                font-size: 8em;
+                color: #ed1f34;
+                right: 0;
+                text-align: end;
+                transform: translate(-15%,-50%);
+                overflow: hidden;
+            }
+        }
+    }
+}
