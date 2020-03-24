@@ -57,7 +57,7 @@ indicators2.forEach((indicator2, i2) => {
       .classList.remove("selected2");
     indicator2.classList.add("selected2");
     slider2.style.transform = "translateX(" + i2 * -25 + "%)";
-    index2 = i;
+    index2 = i2;
   });
 });
 
